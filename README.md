@@ -1,16 +1,41 @@
-# React + Vite
+# People Top App - Sistema de Gestión de Tareas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Descripción
+People Top App es una aplicación web profesional de gestión de tareas (CRUD) desarrollada como una **Single Page Application (SPA)**. Está diseñada para optimizar la productividad mediante una interfaz moderna, filtrado inteligente de tareas, persistencia local de datos y notificaciones en tiempo real.
 
-Currently, two official plugins are available:
+## 🚀 Arquitectura Técnica
+El proyecto ha sido construido siguiendo estándares modernos de desarrollo frontend:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **React 18+:** Interfaz de usuario basada en componentes.
+* **Vite:** Herramienta de compilación ultra rápida.
+* **Tailwind CSS v4:** Estilos modernos y responsivos utilizando utilidades nativas.
+* **React Router Dom:** Enrutamiento dinámico para SPA (`Routes`, `Route`, `Outlet`, `useParams`).
+* **Estado:** Gestión de estado centralizado con `useState` y persistencia con `localStorage`.
 
-## React Compiler
+## 🛠️ Características Destacadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. Gestión de Tareas (CRUD)
+* **Creación y Edición:** Formulario unificado con validación inteligente.
+* **Filtrado Dinámico:** Visualización selectiva de tareas activas, en progreso o completadas.
+* **Eliminación Segura:** Notificaciones de confirmación mediante alertas modernas.
 
-## Expanding the ESLint configuration
+### 2. Persistencia y Datos
+* **Base de Datos Local:** Utiliza `localStorage` para que tus tareas persistan al cerrar o recargar el navegador.
+* **Data Seed:** El sistema inicializa automáticamente con 10 tareas de ejemplo cada vez que se reinicia la sesión para garantizar una experiencia funcional inmediata.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 3. UX Profesional
+* **Dashboard Inteligente:** Widget de rendimiento que calcula porcentajes reales de avance mediante **Anillos de Progreso SVG** dinámicos.
+* **Notificaciones Modernas:** Sistema de alertas (*Toasts*) que informa el éxito de las operaciones (crear, editar, eliminar).
+* **Modal de Revisión:** Vista rápida de detalles para tareas vitales con efecto de desenfoque (*backdrop-blur*).
+* **Iconografía Nativa:** Uso de SVG nativos (Heroicons) para una interfaz limpia y profesional.
+
+## 📁 Estructura del Proyecto
+
+```text
+src/
+├── components/      # Componentes reutilizables (ej. AnilloProgreso)
+├── data/            # Datos semilla (tareasSemilla.js)
+├── layouts/         # Contenedores de estructura (MainLayout)
+├── views/           # Vistas principales (Dashboard, CategoryView, TaskFormView)
+├── App.jsx          # Lógica central, Enrutador y Estado Global
+└── index.css        # Configuración base de Tailwind y animaciones
