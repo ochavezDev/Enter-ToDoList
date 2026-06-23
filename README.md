@@ -1,7 +1,7 @@
-# People Top App - Sistema de Gestión de Tareas
+# ToDo List App - Sistema de Gestión de Tareas
 
 ## 📋 Descripción
-People Top App es una aplicación web profesional de gestión de tareas (CRUD) desarrollada como una **Single Page Application (SPA)**. Está diseñada para optimizar la productividad mediante una interfaz moderna, filtrado inteligente de tareas, persistencia local de datos y notificaciones en tiempo real.
+ToDo List App es una aplicación web profesional de gestión de tareas (CRUD) desarrollada como una **Single Page Application (SPA)**. Está diseñada para optimizar la productividad mediante una interfaz moderna, filtrado inteligente de tareas, persistencia local de datos y notificaciones en tiempo real.
 
 ## 🚀 Arquitectura Técnica
 El proyecto ha sido construido siguiendo estándares modernos de desarrollo frontend:
